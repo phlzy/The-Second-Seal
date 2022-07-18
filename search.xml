@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Boring problems</title>
+      <link href="/2022/07/18/boring_problems/"/>
+      <url>/2022/07/18/boring_problems/</url>
+      
+        <content type="html"><![CDATA[<p>Here’s a collection of boring problems. Coding solutions of them are often<br />trivial and tedious, so I will be happy to see others solving these problems.</p><span id="more"></span><p><span class="exturl"><a class="exturl__link"   href="https://leetcode.cn/problems/contain-virus/" >contain virus</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>，graph, implementation，using BFS or DSU.</p><p>To be continued</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Competitive Programming </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> brute force </tag>
+            
+            <tag> implementation </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【OP27】Multiple Sequences</title>
       <link href="/2022/07/15/OP27/"/>
       <url>/2022/07/15/OP27/</url>
