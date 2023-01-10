@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Pareto Optimal Solution</title>
+      <link href="/2023/01/10/Pareto_Optimal/"/>
+      <url>/2023/01/10/Pareto_Optimal/</url>
+      
+        <content type="html"><![CDATA[<p>The definition of Pareto optimal solution in multiobjective optimization problems.</p><span id="more"></span><p>简明易懂的一篇文章：<span class="exturl"><a class="exturl__link"   href="https://zhuanlan.zhihu.com/p/54691447" >多目标优化之帕累托最优</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>。</p><p>未完待续</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Algorithm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> combinatorial optimization </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【OP29】一人行者</title>
       <link href="/2022/09/03/OP29/"/>
       <url>/2022/09/03/OP29/</url>
@@ -365,7 +390,7 @@
       
       <categories>
           
-          <category> Algorithm and DataStructure </category>
+          <category> Algorithm </category>
           
       </categories>
       
@@ -829,7 +854,7 @@
       
       <categories>
           
-          <category> Algorithm and DataStructure </category>
+          <category> Data Structure </category>
           
       </categories>
       
