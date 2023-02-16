@@ -56,6 +56,31 @@
     
     
     <entry>
+      <title>面试记录1</title>
+      <link href="/2023/02/10/interview1/"/>
+      <url>/2023/02/10/interview1/</url>
+      
+        <content type="html"><![CDATA[<p>下次还填非常简单。</p><span id="more"></span><p>毫无准备的参加了笔试和面试，所幸考的都比较简单。</p>        <h1 id="组成原理"   >          <a href="#组成原理" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#组成原理"></a> 组成原理</h1>      <p>笔试的时候考了一点组成原理的基础知识，面试没问。</p><p>EBP（Extended Base Pointer，扩展基址指针寄存器），指向函数被调用时的栈顶。</p><p>ESP（Extended Stack Pointer，扩展栈指针寄存器），指向栈顶。</p><p>栈指针是从高位到低位移动的，栈内数据越多，ESP指向的地址就越小。</p><p>Extended表示寄存器是32位的。在32位机上，指针一次移动4字节。</p><p>冯·诺依曼型计算机的CPU工作阶段：取指、译码、执行、访存、回写。</p><ul><li>取指：将指令从主存中取到指令寄存器中</li><li>译码：指令译码器对取回的指令进行拆分和解释</li><li>执行：完成指令的操作</li><li>访存：根据指令需要，从主存中取操作数进行运算</li><li>回写：将运行结果写回寄存器或主存</li></ul><p>RISC：Reduced Instruction Set Computer，精简指令集计算机，指令长度较短。</p>        <h1 id="c"   >          <a href="#c" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#c"></a> C++</h1>      <p>笔试和面试都考了，可以说是重点</p>        <h2 id="内存分配方式"   >          <a href="#内存分配方式" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#内存分配方式"></a> 内存分配方式</h2>      <p>从静态存储区分配：在编译时期就已经分配好，且这块内存在程序整个运行期间都存在，如全局变量、<code>static</code> 变量等。</p><p>在栈上创建：在函数执行的时候内部变量存在栈上，执行完毕后自动释放。栈内存分配运算内置于处理器的指令集中，效率很高，但是分配的内存容量有限。</p><p>在堆上分配，即动态内存分配，内存生存期由程序决定，如果不释放就会内存泄漏。（<code>new</code>、<code>malloc</code> 分配的内存都在这里）</p><p>一个C/C++程序占用的内存分为以下几个部分：</p><ol><li>栈区（stack）：由编译器自动分配释放，存放为运行函数而分配的局部变量、函数参数、返回数据、返回地址等。其操作方式类似于数据结构中的栈。</li><li>堆区（heap）：一般有程序员分配释放，若程序员不释放，程序结束时可能由操作系统回收。分配方式类似于链表。</li><li>全局区（静态区）：存放全局变量、静态数据、常量、程序结束时系统回收。</li><li>文字常量区：常量字符串就是放在这个地方。程序结束时由系统释放。</li><li>代码区：存放函数体（类成员变量和全局函数）的二进制代码。</li></ol><p>以上部分转载自 <span class="exturl"><a class="exturl__link"   href="https://blog.csdn.net/jing0611/article/details/4030237" >jing0611的博客</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>        <h2 id="虚函数"   >          <a href="#虚函数" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#虚函数"></a> 虚函数</h2>      <p>构造函数不能声明为虚函数，析构函数可以声明为虚函数，而且有时是必须声明为虚函数。</p><p>具体可以看一下<span class="exturl"><a class="exturl__link"   href="https://blog.csdn.net/stopBL/article/details/77659286" >这篇</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>。</p><p>虚函数考的太简单了，完全没有起到考察的作用。其实我对虚函数的了解是很浅的，日后需要仔细看一下。</p>        <h2 id="智能指针"   >          <a href="#智能指针" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#智能指针"></a> 智能指针</h2>      <p>智能指针有三种：<code>unique_ptr</code>，<code>shared_ptr</code>，<code>weak_ptr</code>。</p><p>详细的内容可以看<span class="exturl"><a class="exturl__link"   href="https://zhuanlan.zhihu.com/p/150555165" >这篇</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p><p>智能指针利用 RAII 思想（Resource Acuqsiton Is Initialzation）管理内存。用局部对象自动销毁的性质控制资源的生命周期。</p>        <h2 id="其他"   >          <a href="#其他" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#其他"></a> 其他</h2>      <p>C++的编译过程：预处理，编译，汇编，链接。编译生成目标文件.obj。</p><p><code>#include</code> 尖括号搜索系统目录和环境变量，引号先搜索当前目录，再搜索系统目录和环境变量。</p>        <h1 id="网络"   >          <a href="#网络" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#网络"></a> 网络</h1>      <div class="table-container"><table><thead><tr><th style="text-align:center">区别</th><th style="text-align:center">TCP</th><th style="text-align:center">UDP</th></tr></thead><tbody><tr><td style="text-align:center">连接</td><td style="text-align:center">有连接</td><td style="text-align:center">无连接</td></tr><tr><td style="text-align:center">顺序</td><td style="text-align:center">保证有序</td><td style="text-align:center">不保证有序</td></tr><tr><td style="text-align:center">可靠性</td><td style="text-align:center">可靠传输</td><td style="text-align:center">可能丢包</td></tr><tr><td style="text-align:center">效率</td><td style="text-align:center">慢</td><td style="text-align:center">快</td></tr><tr><td style="text-align:center">首部</td><td style="text-align:center">大（20B）</td><td style="text-align:center">小（8B）</td></tr><tr><td style="text-align:center">分割</td><td style="text-align:center">字节流，可分割</td><td style="text-align:center">报文，不可分割</td></tr></tbody></table></div><p>TCP 只能单播，而 UDP 可以多播、广播。</p><p>TCP 拥塞控制：慢启动后指数增长，达到阈值后加法增大（拥塞避免，防止拥塞窗口快速增大），快速重传（检测丢包，3个ACK，无须等计时器超时），丢包后快恢复（窗口减半）。</p><p>笔试里还有个有关 <code>epoll</code> 的题，没有了解过。</p>        <h1 id="后记"   >          <a href="#后记" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#后记"></a> 后记</h1>      <p>后来和面试官聊天的时候还提到了一点数据库。用的是传统的关系型数据库，可以了解一下数据库语句分析有关的内容。</p><p>总的来说体验是不错的。因为是第一次参加笔试面试所以没有准备，面试的时候不太会的问题都凭印象在那里瞎扯。面试还考了给两个代码debug，非常简单，或许在这里给了面试官一种经验丰富的错觉吧（</p><p>最后居然拿到了 offer。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Interview </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> interview </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【CM0】初识 CMake</title>
       <link href="/2023/01/30/cmake0/"/>
       <url>/2023/01/30/cmake0/</url>
@@ -199,9 +224,9 @@
       
         <tags>
             
-            <tag> tree </tag>
-            
             <tag> dp </tag>
+            
+            <tag> tree </tag>
             
         </tags>
       
@@ -992,9 +1017,9 @@
       
         <tags>
             
-            <tag> bitmask </tag>
-            
             <tag> dp </tag>
+            
+            <tag> bitmask </tag>
             
         </tags>
       
